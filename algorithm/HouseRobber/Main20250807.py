@@ -1,7 +1,7 @@
 """
-문제링크:https://leetcode.com/problems/longest-consecutive-sequence/description/
+문제링크:https://leetcode.com/problems/house-robber/description/
 제한시간:30분
-사용시간: 41분
+사용시간: 53분
 문제 내용: 도둑들이 집을 털려고 한
 인접한 집은 동시에 털 수 없음
 각집마다 훔칠 수 있는 집이 정해져 있음
