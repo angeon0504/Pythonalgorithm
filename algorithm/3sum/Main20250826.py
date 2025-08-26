@@ -33,12 +33,12 @@ s == 0 → 정답! triplet을 결과에 넣고, 중복 제거 위해 left, right
 
 
 def threeSum(nums: list[int]) -> list[list[int]]:
-    nums.sort()  # 1. 정렬
+    nums.sort()
     res = []
     n = len(nums)
 
     for i in range(n - 2):
-        # 중복 제거: 같은 값이면 스킵
+
         if i > 0 and nums[i] == nums[i - 1]:
             continue
 
@@ -65,6 +65,6 @@ def threeSum(nums: list[int]) -> list[list[int]]:
                 right -= 1
     return res
 
-print(threeSum([-1,0,1,2,-1,-4]))  # [[-1,-1,2], [-1,0,1]]
-print(threeSum([0,1,1]))           # []
-print(threeSum([0,0,0]))           # [[0,0,0]]
+print(threeSum([-1,0,1,2,-1,-4]))
+print(threeSum([0,1,1]))
+print(threeSum([0,0,0]))
