@@ -14,7 +14,7 @@ def isAnagram(s: str, t: str) -> bool:
     count = {}
     for ch in s:
         count[ch] = count.get(ch, 0) + 1
-    #
+
     for ch in t:
         if ch not in count:
             return False
@@ -22,7 +22,7 @@ def isAnagram(s: str, t: str) -> bool:
         if count[ch] == 0:
             del count[ch]
 
-    # 3. 모두 소진되었으면 아나그램
+
     return len(count) == 0
 
 print(isAnagram("anagram", "nagaram"))
